@@ -36,3 +36,8 @@ La idea sera contestar a preguntas como:
 - ¿Cualés serían los stages o Roadmaps para mejorar en las prácticas?
 
 Estas son algunas de las preguntas de base que espero responder a lo largo de esta creacion de contenido.
+
+```{r, out.width = "100%", fig.pos="h"}
+require(knitr)
+include_graphics("Figures/Black_Orpheus-1.svg")
+``` 
