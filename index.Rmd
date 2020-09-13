@@ -7,16 +7,33 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+description: "Libro de estudio de la Teoría musical visto por mi."
 ---
 
 # Prefacio
 
-El propósito de este libro consiste es estudiar .
-Poco a poco, el objetivo será crear capitulos de estudios sobre la teoría Musical.
+El propósito de este libro consiste en poder estudiar la Teoría Musical.
+Poco a poco, el objetivo será crear capítulos de estudios sobre los diferentes temas que pueden haber en este mundo.
+
+La idea sera contestar a preguntas como:
+
+- ¿Qué quiero conseguir con la Música?
+- ¿Cuál es el nivel que quiero tener?
+- ¿Porqué aprendo música?
+- ¿Cuáles son las habilidades que se necesitan desarrollar?
+- ¿Por qué se siente que no se puede uno concentrar o enfocarse en Música?
+- ¿Cuales son las motivaciones para practicar?
+- ¿Cómo establecer un sistema de estudio que convenga para la música?
+- ¿Cómo définir lo que se quiere conseguir en este ?
+- ¿En qué se basa la disciplina para la música?
+- ¿Cualés serían los stages o Roadmaps para mejorar en las prácticas?
+
+Estas son algunas de las preguntas de base que espero responder a lo largo de esta creacion de contenido.
 
 
 
-
+:::info
+Esto es un área de alerta.
+:::
 
 
