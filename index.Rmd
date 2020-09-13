@@ -12,6 +12,13 @@ description: "Libro de estudio de la Teoría musical visto por mi."
 
 # Prefacio
 
+
+::: {#hello .greeting .message width="40%"}
+Hello **world**!
+:::
+
+
+
 El propósito de este libro consiste en poder estudiar la Teoría Musical.
 Poco a poco, el objetivo será crear capítulos de estudios sobre los diferentes temas que pueden haber en este mundo.
 
@@ -29,11 +36,3 @@ La idea sera contestar a preguntas como:
 - ¿Cualés serían los stages o Roadmaps para mejorar en las prácticas?
 
 Estas son algunas de las preguntas de base que espero responder a lo largo de esta creacion de contenido.
-
-
-
-:::info
-Esto es un área de alerta.
-:::
-
-

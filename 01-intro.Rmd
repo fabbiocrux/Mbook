@@ -19,3 +19,39 @@ knitr::kable(
 ```
 
 You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
+
+
+
+```{r}
+
+require(tabr)
+header <- list(
+  title = "Devil's got you beat",
+  composer = "Words and music Blues Saraceno",
+  performer = "Blues Saraceno",
+  album = "Dark Country 4",
+  subtitle = "From the album Dark Country 4 by Blues Saraceno",
+  arranger = "Two picking patterns arranged by Matthew Leonawicz",
+  copyright = "2016 Extreme Music"
+)
+
+txt <- c("DADGAD tuning with capo on 1st fret. Fingerpicking. Let ring.")
+tuning <- "d, a, d g a d'"
+
+# melody 1
+notes <- c(pn("f d c d a d'", 2), "f g a d' f d c a,")
+info <- purrr::map_chr(c("16(", notate("16(", txt)),
+                       ~pc(.x, "16) 8 8 16 16 16( 16) 8 8 16 16 16- 16*7"))
+strings <- "4 4 5 4 2 1 4 4 5 4 2 1 4 4 2 1 4 4 5 5"
+p1 <-purrr::map(info, ~p(notes, .x, strings))
+e1 <- p("d a d' c a, f, d,", "8 16 16 16( 16) 16( 16)", "4 2 1 5 5 6 6")
+e2 <- p("d a d' c a, f, e, d,", "8 16 16 16( 16) 16- 16( 1)", "4 2 1 5 5 6 6 6")
+
+#melody 2
+p2 <- p("d a d' f d c", "8 16*4 8", "4 2 1 4 4 5")
+
+p_all <- c(pct(c(p1[[2]], e1), 3), volta(pct(p2, 3), 1), p1[[1]], e1, p1[[1]], e2)
+track(p_all, tuning = tuning) %>% score() %>%
+  tab("out.pdf", "dm", "4/4", "4 = 115", header)
+```
+
